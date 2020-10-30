@@ -8,7 +8,7 @@ var apiRouter = require("./routes/api");
 var apiResponse = require("./helpers/apiResponse");
 var cors = require("cors");
 
-// DB connection
+// DB connection testing
 var MONGODB_URL = process.env.MONGODB_URL;
 var mongoose = require("mongoose");
 mongoose.connect(MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
